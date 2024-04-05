@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title"><u>Student Registration Form</u></h1>
+    <form action="main.py">
+        <fieldset>
+        <fieldset>
+            <div>
+                <label for="fn">First Name:<span class="re">*</span></label>
+                <input type="text" id="fn" name="fname" placeholder="enter your first name" pattern="[a-zA-Z][.a-zA-Z][&a-z0-9{4}" required>
+                <label for="ln">Last Name:</label>
+                <input type="text" id="ln" name="lname" placeholder="enter your last name">
+            </div></br>
+        </fieldset>
+        <div>
+            <label for="em">Email:</label>
+            <input type="text" id="em" name="email" placeholder="your email">
+            <label for="mob">mobile:</label>
+            <input type="number" id="mob" name="number" placeholder="enter your mobile number">
+        </div></br>
+        <div>
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="number">
+        </div><br>
+        <div>
+            <label for="pws">password::</label>
+            <input type="password" id="pws" name="password" placeholder="enter your passwordr">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="enter your age">
+        </div><br>
+        <div>
+            <label> choose the gender:</label>
+
+            <input type="radio" id="m" name="gender" value="male"><label for="m">male</label>
+
+            <input type="radio" id="f" name="gender" value="female"><label for="f">female</label>
+        </div></br>
+        <div>
+            <label>languages known:</label>
+            <input type="checkbox" id="en" name="languages" value="english">
+            <label for="en">English</label>
+            <input type="checkbox" id="tel" name="languages" value="telugu">
+            <label for="tel">telugu</label>
+            <input type="checkbox" id="hin" name="languages" value="Hindi">
+            <label for="Hin">Hindi</label>
+        </div><br>
+        <div>
+            <label>choose the subjects:</label>
+            <select name="" id="" multiple="3">
+                <option value="">please choose</option>
+                <optgroup>
+                <optgroup label="common">
+                    <option value="Maths">maths</option>
+                    <option value="physics">physics</option>
+                    <option value="chemistry">chemistry</option>
+                    <option value="engineering drawing">engineering drawing</option>
+                </optgroup>
+                <optgroup>
+                <optgroup label="CSE">
+                    <option value="cN">computer networks</option>
+                </optgroup>
+                <optgroup>
+                <optgroup label="MECH">
+                    <option value="FM">fluid mechanics</option>
+                </optgroup>
+                <optgroup>
+                <optgroup label="ECE">
+                    <option value="DSP">DSP</option>
+                    <option value="VLSI">VLSI</option>
+                </select>
+                </optgroup>
+            </div><br>
+                <div>
+                    <p>please choose sports:</p>
+                    <input type="text" list="sports">
+                        <datalist id="sports">
+                            <option value="football">football</option>
+                            <option value="vollyball">vollyball</option>
+                            <option value="kabaddi">kabaddi</option>
+
+                        </datalist>
+                    
+                </div><br>
+
+
+
+
+
+            
+            <div>
+                <label>enter feedback:</label>
+                <textarea cols="20" minlength="40" maxlength="50"></textarea>
+
+
+            </div><br>
+            <div>
+
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
+        </div><br>
+    </form>
+</fieldset>
+</body>
+
+</html>
